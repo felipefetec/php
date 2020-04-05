@@ -9,7 +9,6 @@ class Endereco{
 	}
 }
 
-
 $meuEndereco = new Endereco();
 
 var_dump($meuEndereco);
