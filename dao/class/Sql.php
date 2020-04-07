@@ -1,4 +1,5 @@
 <?php 
+
 class Sql extends PDO {
 
 	private $conn;
@@ -9,7 +10,7 @@ class Sql extends PDO {
 	}
 	private function setParams($stmt, $params = array()){
 		foreach ($params as $key => $value) {
-			$this->setParams($key, $value);
+			$this->setParam($stmt, $key, $value);
 		}
 	}
 	private function setParam($stmt, $key, $value){
